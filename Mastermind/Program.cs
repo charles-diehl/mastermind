@@ -66,17 +66,6 @@ namespace Mastermind
                 return false;
             }
             
-            //I don't know why, but if they put in letters, they deserve to lose a guess.
-            try
-            {
-                int.Parse(guess);
-            }
-            catch
-            {
-                Console.WriteLine("Invalid Guess, please input a 4 digit number");
-                return false;
-            }
-
             char[] charGuess = guess.ToCharArray();
             for( int i = 0; i < 4; i++)
             {
