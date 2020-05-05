@@ -50,10 +50,9 @@ namespace Mastermind
             for (int i = 0; i < 4; i++)
             {
                 answer[i] = rnd.Next(1, 6).ToString()[0];
-                Console.Write(answer[i]);
+                //Console.Write(answer[i]);//debugging only
             }
-                
-            Console.WriteLine();
+            //Console.WriteLine();//debugging only
             return answer;
         }
 
